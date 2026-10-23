@@ -1,0 +1,89 @@
+{
+  "cust-1001": {
+    "subscription_status": "free",
+    "billing_sync_error": "payment_webhook_timeout: charges authorized but subscription not activated",
+    "charges": [
+      {
+        "id": "ch_001",
+        "amount_usd": 29.99,
+        "status": "captured",
+        "card_last4": "4242",
+        "created_minutes_ago": 175,
+        "description": "Pro monthly"
+      },
+      {
+        "id": "ch_002",
+        "amount_usd": 29.99,
+        "status": "pending",
+        "card_last4": "1881",
+        "created_minutes_ago": 118,
+        "description": "Pro monthly"
+      },
+      {
+        "id": "ch_003",
+        "amount_usd": 29.99,
+        "status": "pending",
+        "card_last4": "1881",
+        "created_minutes_ago": 58,
+        "description": "Pro monthly"
+      }
+    ],
+    "refunds": []
+  },
+  "cust-2002": {
+    "subscription_status": "enterprise_active",
+    "billing_sync_error": null,
+    "charges": [],
+    "refunds": []
+  },
+  "cust-3003": {
+    "subscription_status": "pro_active",
+    "billing_sync_error": null,
+    "charges": [
+      {
+        "id": "ch_301",
+        "amount_usd": 29.99,
+        "status": "captured",
+        "card_last4": "0005",
+        "created_minutes_ago": 12960,
+        "description": "Pro monthly"
+      }
+    ],
+    "refunds": []
+  },
+  "cust-4004": {
+    "subscription_status": "free",
+    "billing_sync_error": null,
+    "refunds": [],
+    "charges": [
+      {
+        "id": "ch_401",
+        "amount_usd": 29.99,
+        "status": "captured",
+        "card_last4": "4242",
+        "created_minutes_ago": 1300,
+        "description": "Pro monthly"
+      },
+      {
+        "id": "ch_402",
+        "amount_usd": 29.99,
+        "status": "captured",
+        "card_last4": "4242",
+        "created_minutes_ago": 1290,
+        "description": "Pro monthly"
+      }
+    ]
+  },
+  "cust-5005": {
+    "subscription_status": "pro_active",
+    "billing_sync_error": null,
+    "charges": [],
+    "refunds": []
+  },
+  "cust-7007": {
+    "subscription_status": "enterprise_active",
+    "billing_sync_error": null,
+    "charges": [],
+    "refunds": []
+  }
+}

@@ -1,0 +1,61 @@
+[
+  {
+    "id": "T-004",
+    "customer": {
+      "customer_id": "cust-7007",
+      "plan": "enterprise",
+      "tenure_months": 14,
+      "region": "US",
+      "seats": 20,
+      "notes": "Workspace administrator. Account history is available through the customer-history tool."
+    },
+    "messages": [
+      {
+        "minutes_ago": 20,
+        "text": "Where can I invite two teammates to our workspace? We have spare seats already. I find the navigation a little frustrating, but this is for next week and nobody is blocked."
+      }
+    ]
+  },
+  {
+    "id": "T-005",
+    "customer": {
+      "customer_id": "cust-5005",
+      "plan": "pro",
+      "tenure_months": 8,
+      "region": "Thailand",
+      "seats": 1,
+      "notes": "Individual user; previous support history available through customer lookup."
+    },
+    "messages": [
+      {
+        "minutes_ago": 35,
+        "text": "ลืมรหัสผ่านครับ กด Forgot password แล้วได้รับอีเมลภายในสองนาที แต่พอกดลิงก์ใหม่กลับแจ้งว่าลิงก์หมดอายุทันที"
+      },
+      {
+        "minutes_ago": 10,
+        "text": "ลองขออีเมลใหม่อีกหนึ่งครั้งแล้วและใช้ลิงก์ล่าสุดในหน้าต่างส่วนตัว ก็ยังขึ้นว่าหมดอายุครับ มีแค่ผมคนเดียว แอปมือถือยังเปิดงานเดิมได้ วันนี้ไม่มีงานด่วน แต่อยากกลับมาใช้เว็บได้ครับ"
+      }
+    ]
+  },
+  {
+    "id": "T-006",
+    "customer": {
+      "customer_id": "cust-8008",
+      "plan": "pro",
+      "tenure_months": 14,
+      "region": "US",
+      "seats": 8,
+      "notes": "Customer reports this is their first support request; no history record is supplied for this ID."
+    },
+    "messages": [
+      {
+        "minutes_ago": 25,
+        "text": "Our customer-record import has been stuck at 60% for 40 minutes. The rest of the workspace works. I am the only operator running the import; seven coworkers can still use their existing records. I have not retried because I do not know whether that would create duplicate records."
+      },
+      {
+        "minutes_ago": 0,
+        "text": "This contains 8,000 customer records needed for a contracted onboarding session in 90 minutes. Manual entry cannot finish in time and we cannot start the session without these records. I am worried about missing the commitment. Please investigate; I cannot confirm whether any records were saved."
+      }
+    ]
+  }
+]

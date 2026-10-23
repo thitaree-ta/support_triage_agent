@@ -1,0 +1,370 @@
+[
+  {
+    "ticket_id": "T-004",
+    "resolution_status": "not_established",
+    "evidence": [
+      {
+        "source": "message:0",
+        "kind": "customer_report",
+        "text": "Where can I invite two teammates to our workspace? We have spare seats already. I find the navigation a little frustrating, but this is for next week and nobody is blocked."
+      },
+      {
+        "source": "tool:0:get_customer_history",
+        "kind": "tool_result",
+        "text": "See corresponding tool_calls entry; local fixture data is synthetic."
+      },
+      {
+        "source": "tool:1:search_knowledge_base",
+        "kind": "tool_result",
+        "text": "See corresponding tool_calls entry; local fixture data is synthetic."
+      }
+    ],
+    "limitations": [
+      "Resolution is based on customer reports, not independent execution.",
+      "Tool fixtures are synthetic; no live payment or regional health verification."
+    ],
+    "urgency": "low",
+    "action": "route_to_specialist",
+    "route_to": "technical_support",
+    "analysis": {
+      "urgency": "low",
+      "reasoning": "Offline heuristic assessment of customer reports; inspect tool traces for synthetic evidence.",
+      "product": "Unknown",
+      "primary_issue_type": "other",
+      "secondary_issue_types": [],
+      "customer_sentiment": "neutral",
+      "customer_language": "English",
+      "involves_money": false,
+      "multiple_users_affected": false,
+      "customer_deadline_minutes": null,
+      "feature_requests": [],
+      "kb_article_ids": [],
+      "recommended_action": "route_to_specialist",
+      "route_to": "technical_support",
+      "confidence": 0.7,
+      "draft_reply": null,
+      "handoff_summary": "Review the customer timeline and attached tool evidence. No account change, refund, or delivery has been performed."
+    },
+    "status": "ok",
+    "status_reason": null,
+    "digest": null,
+    "input_notes": [],
+    "adjustments": [],
+    "reply_issues": [],
+    "planned_actions": [
+      {
+        "kind": "create_handoff",
+        "ticket_id": "T-004",
+        "idempotency_key": "3d277b24dc403d40",
+        "payload": {
+          "priority": "routing",
+          "team": "technical_support",
+          "urgency": "low",
+          "status": "ok",
+          "customer_id": "cust-7007",
+          "summary": "Review the customer timeline and attached tool evidence. No account change, refund, or delivery has been performed.",
+          "sla": {
+            "tier": "enterprise-premium",
+            "urgency": "low",
+            "target_minutes": 1440,
+            "waiting_minutes": 20,
+            "remaining_minutes": 1420,
+            "breached": false
+          },
+          "customer_deadline_minutes": null,
+          "draft_reply_for_review": null,
+          "reply_issues": [],
+          "policy_adjustments": []
+        }
+      }
+    ],
+    "sla": {
+      "tier": "enterprise-premium",
+      "urgency": "low",
+      "target_minutes": 1440,
+      "waiting_minutes": 20,
+      "remaining_minutes": 1420,
+      "breached": false
+    },
+    "tool_calls": [
+      {
+        "name": "get_customer_history",
+        "arguments": {
+          "max_tickets": 3
+        },
+        "ok": true,
+        "output": {
+          "found": true,
+          "lifetime_tickets": 0,
+          "last_login_days_ago": 0,
+          "logins_last_30d": 140,
+          "sla_tier": "enterprise-premium",
+          "account_manager": "Mali K.",
+          "recent_tickets": []
+        },
+        "error": null,
+        "duration_ms": 0
+      },
+      {
+        "name": "search_knowledge_base",
+        "arguments": {
+          "query": "unsupported question"
+        },
+        "ok": true,
+        "output": {
+          "results": [],
+          "note": "No relevant articles found. Do not answer from memory."
+        },
+        "error": null,
+        "duration_ms": 0
+      }
+    ]
+  },
+  {
+    "ticket_id": "T-005",
+    "resolution_status": "not_established",
+    "evidence": [
+      {
+        "source": "message:0",
+        "kind": "customer_report",
+        "text": "ลืมรหัสผ่านครับ กด Forgot password แล้วได้รับอีเมลภายในสองนาที แต่พอกดลิงก์ใหม่กลับแจ้งว่าลิงก์หมดอายุทันที"
+      },
+      {
+        "source": "message:1",
+        "kind": "customer_report",
+        "text": "ลองขออีเมลใหม่อีกหนึ่งครั้งแล้วและใช้ลิงก์ล่าสุดในหน้าต่างส่วนตัว ก็ยังขึ้นว่าหมดอายุครับ มีแค่ผมคนเดียว แอปมือถือยังเปิดงานเดิมได้ วันนี้ไม่มีงานด่วน แต่อยากกลับมาใช้เว็บได้ครับ"
+      },
+      {
+        "source": "tool:0:get_customer_history",
+        "kind": "tool_result",
+        "text": "See corresponding tool_calls entry; local fixture data is synthetic."
+      },
+      {
+        "source": "tool:1:search_knowledge_base",
+        "kind": "tool_result",
+        "text": "See corresponding tool_calls entry; local fixture data is synthetic."
+      }
+    ],
+    "limitations": [
+      "Resolution is based on customer reports, not independent execution.",
+      "Tool fixtures are synthetic; no live payment or regional health verification."
+    ],
+    "urgency": "low",
+    "action": "route_to_specialist",
+    "route_to": "technical_support",
+    "analysis": {
+      "urgency": "low",
+      "reasoning": "Offline heuristic assessment of customer reports; inspect tool traces for synthetic evidence.",
+      "product": "Unknown",
+      "primary_issue_type": "other",
+      "secondary_issue_types": [],
+      "customer_sentiment": "neutral",
+      "customer_language": "Thai",
+      "involves_money": false,
+      "multiple_users_affected": false,
+      "customer_deadline_minutes": null,
+      "feature_requests": [],
+      "kb_article_ids": [],
+      "recommended_action": "route_to_specialist",
+      "route_to": "technical_support",
+      "confidence": 0.7,
+      "draft_reply": null,
+      "handoff_summary": "Review the customer timeline and attached tool evidence. No account change, refund, or delivery has been performed."
+    },
+    "status": "ok",
+    "status_reason": null,
+    "digest": null,
+    "input_notes": [],
+    "adjustments": [],
+    "reply_issues": [],
+    "planned_actions": [
+      {
+        "kind": "create_handoff",
+        "ticket_id": "T-005",
+        "idempotency_key": "d7cdc442222b4862",
+        "payload": {
+          "priority": "routing",
+          "team": "technical_support",
+          "urgency": "low",
+          "status": "ok",
+          "customer_id": "cust-5005",
+          "summary": "Review the customer timeline and attached tool evidence. No account change, refund, or delivery has been performed.",
+          "sla": {
+            "tier": "standard",
+            "urgency": "low",
+            "target_minutes": 2880,
+            "waiting_minutes": 35,
+            "remaining_minutes": 2845,
+            "breached": false
+          },
+          "customer_deadline_minutes": null,
+          "draft_reply_for_review": null,
+          "reply_issues": [],
+          "policy_adjustments": []
+        }
+      }
+    ],
+    "sla": {
+      "tier": "standard",
+      "urgency": "low",
+      "target_minutes": 2880,
+      "waiting_minutes": 35,
+      "remaining_minutes": 2845,
+      "breached": false
+    },
+    "tool_calls": [
+      {
+        "name": "get_customer_history",
+        "arguments": {
+          "max_tickets": 3
+        },
+        "ok": true,
+        "output": {
+          "found": true,
+          "lifetime_tickets": 0,
+          "last_login_days_ago": 0,
+          "logins_last_30d": 25,
+          "sla_tier": "standard",
+          "account_manager": null,
+          "recent_tickets": []
+        },
+        "error": null,
+        "duration_ms": 0
+      },
+      {
+        "name": "search_knowledge_base",
+        "arguments": {
+          "query": "unsupported question"
+        },
+        "ok": true,
+        "output": {
+          "results": [],
+          "note": "No relevant articles found. Do not answer from memory."
+        },
+        "error": null,
+        "duration_ms": 0
+      }
+    ]
+  },
+  {
+    "ticket_id": "T-006",
+    "resolution_status": "not_established",
+    "evidence": [
+      {
+        "source": "message:0",
+        "kind": "customer_report",
+        "text": "Our customer-record import has been stuck at 60% for 40 minutes. The rest of the workspace works. I am the only operator running the import; seven coworkers can still use their existing records. I have not retried because I do not know whether that would create duplicate records."
+      },
+      {
+        "source": "message:1",
+        "kind": "customer_report",
+        "text": "This contains 8,000 customer records needed for a contracted onboarding session in 90 minutes. Manual entry cannot finish in time and we cannot start the session without these records. I am worried about missing the commitment. Please investigate; I cannot confirm whether any records were saved."
+      },
+      {
+        "source": "tool:0:get_customer_history",
+        "kind": "tool_result",
+        "text": "See corresponding tool_calls entry; local fixture data is synthetic."
+      },
+      {
+        "source": "tool:1:search_knowledge_base",
+        "kind": "tool_result",
+        "text": "See corresponding tool_calls entry; local fixture data is synthetic."
+      }
+    ],
+    "limitations": [
+      "Resolution is based on customer reports, not independent execution.",
+      "Tool fixtures are synthetic; no live payment or regional health verification."
+    ],
+    "urgency": "low",
+    "action": "route_to_specialist",
+    "route_to": "technical_support",
+    "analysis": {
+      "urgency": "low",
+      "reasoning": "Offline heuristic assessment of customer reports; inspect tool traces for synthetic evidence.",
+      "product": "Unknown",
+      "primary_issue_type": "other",
+      "secondary_issue_types": [],
+      "customer_sentiment": "neutral",
+      "customer_language": "English",
+      "involves_money": false,
+      "multiple_users_affected": false,
+      "customer_deadline_minutes": null,
+      "feature_requests": [],
+      "kb_article_ids": [],
+      "recommended_action": "route_to_specialist",
+      "route_to": "technical_support",
+      "confidence": 0.7,
+      "draft_reply": null,
+      "handoff_summary": "Review the customer timeline and attached tool evidence. No account change, refund, or delivery has been performed."
+    },
+    "status": "ok",
+    "status_reason": null,
+    "digest": null,
+    "input_notes": [],
+    "adjustments": [],
+    "reply_issues": [],
+    "planned_actions": [
+      {
+        "kind": "create_handoff",
+        "ticket_id": "T-006",
+        "idempotency_key": "b05f6e6d9b788384",
+        "payload": {
+          "priority": "routing",
+          "team": "technical_support",
+          "urgency": "low",
+          "status": "ok",
+          "customer_id": "cust-8008",
+          "summary": "Review the customer timeline and attached tool evidence. No account change, refund, or delivery has been performed.",
+          "sla": {
+            "tier": "standard",
+            "urgency": "low",
+            "target_minutes": 2880,
+            "waiting_minutes": 25,
+            "remaining_minutes": 2855,
+            "breached": false
+          },
+          "customer_deadline_minutes": null,
+          "draft_reply_for_review": null,
+          "reply_issues": [],
+          "policy_adjustments": []
+        }
+      }
+    ],
+    "sla": {
+      "tier": "standard",
+      "urgency": "low",
+      "target_minutes": 2880,
+      "waiting_minutes": 25,
+      "remaining_minutes": 2855,
+      "breached": false
+    },
+    "tool_calls": [
+      {
+        "name": "get_customer_history",
+        "arguments": {
+          "max_tickets": 3
+        },
+        "ok": true,
+        "output": {
+          "found": false,
+          "note": "No history on file for this customer."
+        },
+        "error": null,
+        "duration_ms": 0
+      },
+      {
+        "name": "search_knowledge_base",
+        "arguments": {
+          "query": "unsupported question"
+        },
+        "ok": true,
+        "output": {
+          "results": [],
+          "note": "No relevant articles found. Do not answer from memory."
+        },
+        "error": null,
+        "duration_ms": 0
+      }
+    ]
+  }
+]

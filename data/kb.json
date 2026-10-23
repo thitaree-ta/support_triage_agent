@@ -1,0 +1,74 @@
+[
+  {
+    "id": "KB-101",
+    "title": "Payment failed when upgrading to Pro",
+    "tags": ["billing", "upgrade", "payment", "card", "declined"],
+    "body": "Upgrade payments can fail because the card was declined, 3-D Secure verification was not completed, or the bank blocked an international charge. Ask the customer to retry once with a card that has 3-D Secure enabled. If a charge appears on the bank statement but the plan did not change, do not retry again: see KB-102 and KB-103."
+  },
+  {
+    "id": "KB-102",
+    "title": "Duplicate, pending or unexpected charges and refunds",
+    "tags": ["billing", "charge", "pending", "duplicate", "refund", "dispute", "chargeback"],
+    "body": "A pending charge is a card authorization hold. Holds that never convert to a payment usually drop off the statement within 3-7 business days. Captured duplicate charges must be reviewed by the Billing team, who can refund them (refunds take 5-10 business days to reach the card). Support chat cannot issue refunds or promise refund timing. Customers who open a bank dispute may have their account restricted while it is open."
+  },
+  {
+    "id": "KB-103",
+    "title": "Paid for Pro but account still shows Free plan",
+    "tags": ["billing", "upgrade", "subscription", "plan", "pro", "sync"],
+    "body": "Plan changes normally apply within 10 minutes of a successful payment. If the plan has not changed after 30 minutes, the subscription sync failed and the Billing team must activate it manually. Customers cannot fix this themselves."
+  },
+  {
+    "id": "KB-401",
+    "title": "Export features by plan",
+    "tags": ["export", "pdf", "csv", "pro", "plan", "features"],
+    "body": "Free plan: export to CSV only, up to 100 rows. Pro plan: unlimited CSV, PDF and PowerPoint export. Export features unlock as soon as the Pro plan is active."
+  },
+  {
+    "id": "KB-201",
+    "title": "Error 500 or service unavailable",
+    "tags": ["error", "500", "outage", "access", "login", "unavailable", "down"],
+    "body": "A 500 error means a server-side failure. First check whether it is isolated: try another network, browser or user. If several users or browsers see the same error, treat it as a possible service incident and escalate to Incident Response immediately. Do not ask the customer to keep retrying."
+  },
+  {
+    "id": "KB-202",
+    "title": "Status page says operational but customers report an outage",
+    "tags": ["status", "status page", "region", "incident", "outage", "operational"],
+    "body": "The public status page is updated by hand after an incident is declared and can lag by hours. If customers report failures while the status page is green, check internal monitoring for the region and page the on-call engineer. Never tell a customer the outage is confirmed, or give an ETA, until Incident Response has acknowledged it."
+  },
+  {
+    "id": "KB-701",
+    "title": "Enterprise priority support and escalation",
+    "tags": ["enterprise", "sla", "escalation", "priority", "critical", "on-call"],
+    "body": "Enterprise customers with a critical production issue (system unavailable for multiple users) are escalated to a human on-call engineer and their account manager is notified. Premium SLA: first human response within 30 minutes for critical issues."
+  },
+  {
+    "id": "KB-301",
+    "title": "Dark mode and appearance settings",
+    "tags": ["dark mode", "theme", "appearance", "settings", "light", "dark"],
+    "body": "Dark mode is available on all plans (Free, Pro and Enterprise) in app version 5.3 and later. Open Settings > Appearance and choose Light, Dark or System Default. If you only see Light and System Default, the app or browser tab is running an older cached version: hard-refresh the web app (Ctrl/Cmd+Shift+R) or update the desktop app via Help > Check for Updates."
+  },
+  {
+    "id": "KB-303",
+    "title": "System Default theme does not follow my operating system",
+    "tags": ["system default", "theme", "macos", "windows", "dark mode", "os", "appearance"],
+    "body": "System Default follows the operating system appearance in app version 5.3 and later. On older versions it always shows Light. Update the app or hard-refresh the web app, then switch to Light and back to System Default. If it still does not follow the OS after updating, report it to Technical Support with the app version."
+  },
+  {
+    "id": "KB-302",
+    "title": "Scheduling automatic dark mode (auto-switch at a set time)",
+    "tags": ["schedule", "automatic", "dark mode", "auto switch", "feature request", "theme"],
+    "body": "Custom time-based theme schedules are not supported yet; the request is tracked by the Product team. Workaround: set Appearance to System Default and enable automatic appearance in the operating system (macOS: System Settings > Appearance > Auto switches at sunrise/sunset)."
+  },
+  {
+    "id": "KB-501",
+    "title": "SSO and login problems",
+    "tags": ["sso", "login", "password", "saml", "sign in", "account access"],
+    "body": "For SSO failures check that the identity provider certificate has not expired and that the user is assigned to the app. For password resets use the Forgot password link; reset emails arrive within 5 minutes."
+  },
+  {
+    "id": "KB-601",
+    "title": "Managing seats and inviting teammates",
+    "tags": ["seats", "invite", "team", "users", "admin"],
+    "body": "Workspace admins can invite teammates from Settings > Members. Enterprise seat counts are changed by the account manager."
+  }
+]

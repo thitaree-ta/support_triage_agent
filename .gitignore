@@ -1,0 +1,12 @@
+.env
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+failed_tickets.jsonl
+outbox/
+
+.env.*
+!.env.example
+result*.json
+*.egg-info/

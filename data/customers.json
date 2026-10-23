@@ -1,0 +1,63 @@
+{
+  "cust-1001": {
+    "lifetime_tickets": 0,
+    "recent_tickets": [],
+    "last_login_days_ago": 0,
+    "logins_last_30d": 18,
+    "sla_tier": "community",
+    "account_manager": null
+  },
+  "cust-2002": {
+    "lifetime_tickets": 3,
+    "recent_tickets": [
+      {
+        "id": "T-0412",
+        "subject": "How to add SSO group mapping",
+        "status": "resolved",
+        "resolved_days_ago": 61
+      },
+      {
+        "id": "T-0377",
+        "subject": "Invoice address change",
+        "status": "resolved",
+        "resolved_days_ago": 120
+      }
+    ],
+    "last_login_days_ago": 0,
+    "logins_last_30d": 312,
+    "sla_tier": "enterprise-premium",
+    "account_manager": "Napat S."
+  },
+  "cust-3003": {
+    "lifetime_tickets": 0,
+    "recent_tickets": [],
+    "last_login_days_ago": 0,
+    "logins_last_30d": 30,
+    "sla_tier": "standard",
+    "account_manager": null
+  },
+  "cust-4004": {
+    "lifetime_tickets": 0,
+    "recent_tickets": [],
+    "last_login_days_ago": 0,
+    "logins_last_30d": 9,
+    "sla_tier": "community",
+    "account_manager": null
+  },
+  "cust-5005": {
+    "lifetime_tickets": 0,
+    "recent_tickets": [],
+    "last_login_days_ago": 0,
+    "logins_last_30d": 25,
+    "sla_tier": "standard",
+    "account_manager": null
+  },
+  "cust-7007": {
+    "lifetime_tickets": 0,
+    "recent_tickets": [],
+    "last_login_days_ago": 0,
+    "logins_last_30d": 140,
+    "sla_tier": "enterprise-premium",
+    "account_manager": "Mali K."
+  }
+}

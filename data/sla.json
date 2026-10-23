@@ -1,0 +1,5 @@
+{
+  "enterprise": {"tier": "enterprise-premium", "response_minutes": {"critical": 30, "high": 60, "medium": 240, "low": 1440}},
+  "pro":        {"tier": "standard",           "response_minutes": {"critical": 120, "high": 240, "medium": 1440, "low": 2880}},
+  "free":       {"tier": "community",          "response_minutes": {"critical": 480, "high": 1440, "medium": 2880, "low": 4320}}
+}

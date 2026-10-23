@@ -1,0 +1,516 @@
+[
+  {
+    "ticket_id": "T-004",
+    "resolution_status": "not_established",
+    "evidence": [
+      {
+        "source": "message:0",
+        "kind": "customer_report",
+        "text": "Where can I invite two teammates to our workspace? We have spare seats already. I find the navigation a little frustrating, but this is for next week and nobody is blocked."
+      },
+      {
+        "source": "tool:0:get_customer_history",
+        "kind": "tool_result",
+        "text": "See corresponding tool_calls entry; local fixture data is synthetic."
+      },
+      {
+        "source": "tool:1:search_knowledge_base",
+        "kind": "tool_result",
+        "text": "See corresponding tool_calls entry; local fixture data is synthetic."
+      }
+    ],
+    "limitations": [
+      "Resolution is based on customer reports, not independent execution.",
+      "Tool fixtures are synthetic; no live payment or regional health verification."
+    ],
+    "urgency": "low",
+    "action": "route_to_specialist",
+    "route_to": "technical_support",
+    "analysis": {
+      "urgency": "low",
+      "reasoning": "The customer is asking where to invite two teammates and explicitly says nobody is blocked and the need is next week. KB-601 provides the navigation for workspace administrators; account history shows no related prior tickets.",
+      "product": "Workspace administration / member invitations",
+      "primary_issue_type": "how_to",
+      "secondary_issue_types": [],
+      "customer_sentiment": "frustrated",
+      "customer_language": "English",
+      "involves_money": false,
+      "multiple_users_affected": false,
+      "customer_deadline_minutes": null,
+      "feature_requests": [],
+      "kb_article_ids": [
+        "KB-601"
+      ],
+      "recommended_action": "auto_respond",
+      "route_to": null,
+      "confidence": 0.98,
+      "draft_reply": "You can invite teammates from **Settings > Members**. As a workspace administrator, you should be able to add the two teammates there using your available seats.",
+      "handoff_summary": null
+    },
+    "status": "ok",
+    "status_reason": null,
+    "digest": null,
+    "input_notes": [],
+    "adjustments": [
+      {
+        "rule": "unverified_reply_claims",
+        "field": "action",
+        "before": "auto_respond",
+        "after": "route_to_specialist",
+        "reason": "No approved response matches this request and retrieved evidence."
+      },
+      {
+        "rule": "unverified_reply_claims",
+        "field": "route_to",
+        "before": "none",
+        "after": "technical_support",
+        "reason": "No approved response matches this request and retrieved evidence."
+      }
+    ],
+    "reply_issues": [],
+    "planned_actions": [
+      {
+        "kind": "create_handoff",
+        "ticket_id": "T-004",
+        "idempotency_key": "d74ff1c71a7c2ac3",
+        "payload": {
+          "priority": "routing",
+          "team": "technical_support",
+          "urgency": "low",
+          "status": "ok",
+          "customer_id": "cust-7007",
+          "summary": "The customer is asking where to invite two teammates and explicitly says nobody is blocked and the need is next week. KB-601 provides the navigation for workspace administrators; account history shows no related prior tickets.",
+          "sla": {
+            "tier": "enterprise-premium",
+            "urgency": "low",
+            "target_minutes": 1440,
+            "waiting_minutes": 20,
+            "remaining_minutes": 1420,
+            "breached": false
+          },
+          "customer_deadline_minutes": null,
+          "draft_reply_for_review": "You can invite teammates from **Settings > Members**. As a workspace administrator, you should be able to add the two teammates there using your available seats.",
+          "reply_issues": [],
+          "policy_adjustments": [
+            "unverified_reply_claims",
+            "unverified_reply_claims"
+          ]
+        }
+      }
+    ],
+    "sla": {
+      "tier": "enterprise-premium",
+      "urgency": "low",
+      "target_minutes": 1440,
+      "waiting_minutes": 20,
+      "remaining_minutes": 1420,
+      "breached": false
+    },
+    "tool_calls": [
+      {
+        "name": "get_customer_history",
+        "arguments": {
+          "max_tickets": 5
+        },
+        "ok": true,
+        "output": {
+          "found": true,
+          "lifetime_tickets": 0,
+          "last_login_days_ago": 0,
+          "logins_last_30d": 140,
+          "sla_tier": "enterprise-premium",
+          "account_manager": "Mali K.",
+          "recent_tickets": []
+        },
+        "error": null,
+        "duration_ms": 0
+      },
+      {
+        "name": "search_knowledge_base",
+        "arguments": {
+          "query": "invite teammates workspace add members seats"
+        },
+        "ok": true,
+        "output": {
+          "results": [
+            {
+              "id": "KB-601",
+              "title": "Managing seats and inviting teammates",
+              "content": "Workspace admins can invite teammates from Settings > Members. Enterprise seat counts are changed by the account manager.",
+              "score": 18.51
+            }
+          ],
+          "note": null
+        },
+        "error": null,
+        "duration_ms": 0
+      }
+    ]
+  },
+  {
+    "ticket_id": "T-005",
+    "resolution_status": "not_established",
+    "evidence": [
+      {
+        "source": "message:0",
+        "kind": "customer_report",
+        "text": "ลืมรหัสผ่านครับ กด Forgot password แล้วได้รับอีเมลภายในสองนาที แต่พอกดลิงก์ใหม่กลับแจ้งว่าลิงก์หมดอายุทันที"
+      },
+      {
+        "source": "message:1",
+        "kind": "customer_report",
+        "text": "ลองขออีเมลใหม่อีกหนึ่งครั้งแล้วและใช้ลิงก์ล่าสุดในหน้าต่างส่วนตัว ก็ยังขึ้นว่าหมดอายุครับ มีแค่ผมคนเดียว แอปมือถือยังเปิดงานเดิมได้ วันนี้ไม่มีงานด่วน แต่อยากกลับมาใช้เว็บได้ครับ"
+      },
+      {
+        "source": "tool:0:get_customer_history",
+        "kind": "tool_result",
+        "text": "See corresponding tool_calls entry; local fixture data is synthetic."
+      },
+      {
+        "source": "tool:1:search_knowledge_base",
+        "kind": "tool_result",
+        "text": "See corresponding tool_calls entry; local fixture data is synthetic."
+      },
+      {
+        "source": "tool:2:check_service_status",
+        "kind": "tool_result",
+        "text": "See corresponding tool_calls entry; local fixture data is synthetic."
+      }
+    ],
+    "limitations": [
+      "Resolution is based on customer reports, not independent execution.",
+      "Tool fixtures are synthetic; no live payment or regional health verification."
+    ],
+    "urgency": "critical",
+    "action": "escalate_to_human",
+    "route_to": "incident_response",
+    "analysis": {
+      "urgency": "critical",
+      "reasoning": "The customer cannot regain web access because two newly issued password-reset links expired immediately, although the mobile app remains usable and they report only one affected user. Separately, internal monitoring shows an active, severe degradation affecting the API gateway and web app in ap-southeast; the public status page is stale and still reports operational status, so this requires incident review.",
+      "product": "Authentication / password reset and web app access",
+      "primary_issue_type": "account_access",
+      "secondary_issue_types": [
+        "outage"
+      ],
+      "customer_sentiment": "neutral",
+      "customer_language": "Thai",
+      "involves_money": false,
+      "multiple_users_affected": false,
+      "customer_deadline_minutes": null,
+      "feature_requests": [],
+      "kb_article_ids": [
+        "KB-501"
+      ],
+      "recommended_action": "escalate_to_human",
+      "route_to": "incident_response",
+      "confidence": 0.9,
+      "draft_reply": "ขออภัยที่ลิงก์รีเซ็ตรหัสผ่านล่าสุดแสดงว่าหมดอายุทันที แม้คุณจะเปิดผ่านหน้าต่างส่วนตัวแล้วก็ตาม กรุณาอย่าส่งรหัสผ่านหรือข้อมูลลับมาในแชตนี้ หากสะดวก โปรดส่งภาพหน้าจอของข้อความผิดพลาดโดยปิดบังข้อมูลส่วนบุคคล พร้อมระบุเวลาที่กดลิงก์ล่าสุดและชื่อเบราว์เซอร์ เพื่อช่วยตรวจสอบเพิ่มเติม",
+      "handoff_summary": "Customer reports two newly requested password-reset links expired immediately, including the latest link used in a private window. They are the only reported affected user; mobile access to existing work remains available and there is no stated deadline. Customer history shows 25 logins in the last 30 days and a login today, with no prior tickets. Thailand maps to ap-southeast, where internal monitoring shows a 41.8% 5xx rate and an active alert affecting api-gateway and web-app for 125 minutes, while the public page (updated 300 minutes ago) reports operational; assess whether the reset flow is part of the active degradation."
+    },
+    "status": "ok",
+    "status_reason": null,
+    "digest": null,
+    "input_notes": [],
+    "adjustments": [],
+    "reply_issues": [
+      {
+        "rule": "asks_for_secrets",
+        "excerpt": "ส่งรหัสผ่าน",
+        "reason": "Asks the customer to send a card number, password or similar secret."
+      }
+    ],
+    "planned_actions": [
+      {
+        "kind": "create_handoff",
+        "ticket_id": "T-005",
+        "idempotency_key": "ea317f36e2835d74",
+        "payload": {
+          "priority": "escalation",
+          "team": "incident_response",
+          "urgency": "critical",
+          "status": "ok",
+          "customer_id": "cust-5005",
+          "summary": "Customer reports two newly requested password-reset links expired immediately, including the latest link used in a private window. They are the only reported affected user; mobile access to existing work remains available and there is no stated deadline. Customer history shows 25 logins in the last 30 days and a login today, with no prior tickets. Thailand maps to ap-southeast, where internal monitoring shows a 41.8% 5xx rate and an active alert affecting api-gateway and web-app for 125 minutes, while the public page (updated 300 minutes ago) reports operational; assess whether the reset flow is part of the active degradation.",
+          "sla": {
+            "tier": "standard",
+            "urgency": "critical",
+            "target_minutes": 120,
+            "waiting_minutes": 35,
+            "remaining_minutes": 85,
+            "breached": false
+          },
+          "customer_deadline_minutes": null,
+          "draft_reply_for_review": "ขออภัยที่ลิงก์รีเซ็ตรหัสผ่านล่าสุดแสดงว่าหมดอายุทันที แม้คุณจะเปิดผ่านหน้าต่างส่วนตัวแล้วก็ตาม กรุณาอย่าส่งรหัสผ่านหรือข้อมูลลับมาในแชตนี้ หากสะดวก โปรดส่งภาพหน้าจอของข้อความผิดพลาดโดยปิดบังข้อมูลส่วนบุคคล พร้อมระบุเวลาที่กดลิงก์ล่าสุดและชื่อเบราว์เซอร์ เพื่อช่วยตรวจสอบเพิ่มเติม",
+          "reply_issues": [
+            {
+              "rule": "asks_for_secrets",
+              "excerpt": "ส่งรหัสผ่าน",
+              "reason": "Asks the customer to send a card number, password or similar secret."
+            }
+          ],
+          "policy_adjustments": []
+        }
+      }
+    ],
+    "sla": {
+      "tier": "standard",
+      "urgency": "critical",
+      "target_minutes": 120,
+      "waiting_minutes": 35,
+      "remaining_minutes": 85,
+      "breached": false
+    },
+    "tool_calls": [
+      {
+        "name": "get_customer_history",
+        "arguments": {
+          "max_tickets": 5
+        },
+        "ok": true,
+        "output": {
+          "found": true,
+          "lifetime_tickets": 0,
+          "last_login_days_ago": 0,
+          "logins_last_30d": 25,
+          "sla_tier": "standard",
+          "account_manager": null,
+          "recent_tickets": []
+        },
+        "error": null,
+        "duration_ms": 0
+      },
+      {
+        "name": "search_knowledge_base",
+        "arguments": {
+          "query": "password reset link expired immediately forgot password private window"
+        },
+        "ok": true,
+        "output": {
+          "results": [
+            {
+              "id": "KB-501",
+              "title": "SSO and login problems",
+              "content": "For SSO failures check that the identity provider certificate has not expired and that the user is assigned to the app. For password resets use the Forgot password link; reset emails arrive within 5 minutes.",
+              "score": 14.66
+            },
+            {
+              "id": "KB-201",
+              "title": "Error 500 or service unavailable",
+              "content": "A 500 error means a server-side failure. First check whether it is isolated: try another network, browser or user. If several users or browsers see the same error, treat it as a possible service incident and escalate to Incident Response immediately. Do not ask the customer to keep retrying.",
+              "score": 2.16
+            },
+            {
+              "id": "KB-303",
+              "title": "System Default theme does not follow my operating system",
+              "content": "System Default follows the operating system appearance in app version 5.3 and later. On older versions it always shows Light. Update the app or hard-refresh the web app, then switch to Light and back to System Default. If it still does not follow the OS after updating, report it to Technical Support with the app version.",
+              "score": 1.96
+            }
+          ],
+          "note": null
+        },
+        "error": null,
+        "duration_ms": 0
+      },
+      {
+        "name": "check_service_status",
+        "arguments": {
+          "region": "Thailand"
+        },
+        "ok": true,
+        "output": {
+          "region": "ap-southeast",
+          "public_status_page": {
+            "status": "operational",
+            "last_updated_minutes_ago": 300,
+            "active_incidents": []
+          },
+          "internal_monitoring": {
+            "error_rate_5xx_pct": 41.8,
+            "alert_firing": true,
+            "alert_started_minutes_ago": 125,
+            "affected_components": [
+              "api-gateway",
+              "web-app"
+            ],
+            "declared_incident_id": null
+          },
+          "internal_degraded": true,
+          "status_page_may_be_stale": true
+        },
+        "error": null,
+        "duration_ms": 0
+      }
+    ]
+  },
+  {
+    "ticket_id": "T-006",
+    "resolution_status": "not_established",
+    "evidence": [
+      {
+        "source": "message:0",
+        "kind": "customer_report",
+        "text": "Our customer-record import has been stuck at 60% for 40 minutes. The rest of the workspace works. I am the only operator running the import; seven coworkers can still use their existing records. I have not retried because I do not know whether that would create duplicate records."
+      },
+      {
+        "source": "message:1",
+        "kind": "customer_report",
+        "text": "This contains 8,000 customer records needed for a contracted onboarding session in 90 minutes. Manual entry cannot finish in time and we cannot start the session without these records. I am worried about missing the commitment. Please investigate; I cannot confirm whether any records were saved."
+      },
+      {
+        "source": "tool:0:get_customer_history",
+        "kind": "tool_result",
+        "text": "See corresponding tool_calls entry; local fixture data is synthetic."
+      },
+      {
+        "source": "tool:1:search_knowledge_base",
+        "kind": "tool_result",
+        "text": "See corresponding tool_calls entry; local fixture data is synthetic."
+      },
+      {
+        "source": "tool:2:check_service_status",
+        "kind": "tool_result",
+        "text": "See corresponding tool_calls entry; local fixture data is synthetic."
+      }
+    ],
+    "limitations": [
+      "Resolution is based on customer reports, not independent execution.",
+      "Tool fixtures are synthetic; no live payment or regional health verification."
+    ],
+    "urgency": "high",
+    "action": "route_to_specialist",
+    "route_to": "technical_support",
+    "analysis": {
+      "urgency": "high",
+      "reasoning": "A single operator has an unresolved customer-record import stalled at 60%, and the records are required for a contracted onboarding session in 90 minutes. This is an imminent business deadline and a material functional failure; seven coworkers remain able to use existing records, so there is no evidence of a multi-user outage.",
+      "product": "Customer records / data import",
+      "primary_issue_type": "bug",
+      "secondary_issue_types": [],
+      "customer_sentiment": "frustrated",
+      "customer_language": "English",
+      "involves_money": false,
+      "multiple_users_affected": false,
+      "customer_deadline_minutes": 90,
+      "feature_requests": [],
+      "kb_article_ids": [],
+      "recommended_action": "route_to_specialist",
+      "route_to": "technical_support",
+      "confidence": 0.91,
+      "draft_reply": "I understand the urgency: the import is stalled at 60%, and the 8,000 records are needed for your onboarding session in about 90 minutes. Since it is not yet clear whether any records were saved, please avoid starting a second import for the moment. If available, please send the import job ID, the file type and size, and a screenshot of the import status or any error shown (please do not include customer-record contents).",
+      "handoff_summary": "Customer reports one customer-record import has remained at 60% for 40 minutes; they cannot determine whether any records were saved and have not retried due to duplicate-record risk. The 8,000 records are needed for a contracted onboarding session in 90 minutes; only this operator is affected, while seven coworkers can use existing records. US service status is publicly operational and internal monitoring shows no active degradation, which does not establish the state of this import job. Investigate the import/job state and determine whether a safe retry or recovery path is available."
+    },
+    "status": "ok",
+    "status_reason": null,
+    "digest": null,
+    "input_notes": [],
+    "adjustments": [],
+    "reply_issues": [],
+    "planned_actions": [
+      {
+        "kind": "create_handoff",
+        "ticket_id": "T-006",
+        "idempotency_key": "4be85ac8a810eb4e",
+        "payload": {
+          "priority": "routing",
+          "team": "technical_support",
+          "urgency": "high",
+          "status": "ok",
+          "customer_id": "cust-8008",
+          "summary": "Customer reports one customer-record import has remained at 60% for 40 minutes; they cannot determine whether any records were saved and have not retried due to duplicate-record risk. The 8,000 records are needed for a contracted onboarding session in 90 minutes; only this operator is affected, while seven coworkers can use existing records. US service status is publicly operational and internal monitoring shows no active degradation, which does not establish the state of this import job. Investigate the import/job state and determine whether a safe retry or recovery path is available.",
+          "sla": {
+            "tier": "standard",
+            "urgency": "high",
+            "target_minutes": 240,
+            "waiting_minutes": 25,
+            "remaining_minutes": 215,
+            "breached": false
+          },
+          "customer_deadline_minutes": 90,
+          "draft_reply_for_review": "I understand the urgency: the import is stalled at 60%, and the 8,000 records are needed for your onboarding session in about 90 minutes. Since it is not yet clear whether any records were saved, please avoid starting a second import for the moment. If available, please send the import job ID, the file type and size, and a screenshot of the import status or any error shown (please do not include customer-record contents).",
+          "reply_issues": [],
+          "policy_adjustments": []
+        }
+      }
+    ],
+    "sla": {
+      "tier": "standard",
+      "urgency": "high",
+      "target_minutes": 240,
+      "waiting_minutes": 25,
+      "remaining_minutes": 215,
+      "breached": false
+    },
+    "tool_calls": [
+      {
+        "name": "get_customer_history",
+        "arguments": {
+          "max_tickets": 5
+        },
+        "ok": true,
+        "output": {
+          "found": false,
+          "note": "No history on file for this customer."
+        },
+        "error": null,
+        "duration_ms": 0
+      },
+      {
+        "name": "search_knowledge_base",
+        "arguments": {
+          "query": "customer record import stuck progress duplicate records retry import"
+        },
+        "ok": true,
+        "output": {
+          "results": [
+            {
+              "id": "KB-102",
+              "title": "Duplicate, pending or unexpected charges and refunds",
+              "content": "A pending charge is a card authorization hold. Holds that never convert to a payment usually drop off the statement within 3-7 business days. Captured duplicate charges must be reviewed by the Billing team, who can refund them (refunds take 5-10 business days to reach the card). Support chat cannot issue refunds or promise refund timing. Customers who open a bank dispute may have their account restricted while it is open.",
+              "score": 4.19
+            },
+            {
+              "id": "KB-101",
+              "title": "Payment failed when upgrading to Pro",
+              "content": "Upgrade payments can fail because the card was declined, 3-D Secure verification was not completed, or the bank blocked an international charge. Ask the customer to retry once with a card that has 3-D Secure enabled. If a charge appears on the bank statement but the plan did not change, do not retry again: see KB-102 and KB-103.",
+              "score": 2.9
+            },
+            {
+              "id": "KB-201",
+              "title": "Error 500 or service unavailable",
+              "content": "A 500 error means a server-side failure. First check whether it is isolated: try another network, browser or user. If several users or browsers see the same error, treat it as a possible service incident and escalate to Incident Response immediately. Do not ask the customer to keep retrying.",
+              "score": 2.35
+            }
+          ],
+          "note": null
+        },
+        "error": null,
+        "duration_ms": 0
+      },
+      {
+        "name": "check_service_status",
+        "arguments": {
+          "region": "US"
+        },
+        "ok": true,
+        "output": {
+          "region": "us-east",
+          "public_status_page": {
+            "status": "operational",
+            "last_updated_minutes_ago": 300,
+            "active_incidents": []
+          },
+          "internal_monitoring": {
+            "error_rate_5xx_pct": 0.1,
+            "alert_firing": false,
+            "alert_started_minutes_ago": null,
+            "affected_components": [],
+            "declared_incident_id": null
+          },
+          "internal_degraded": false,
+          "status_page_may_be_stale": false
+        },
+        "error": null,
+        "duration_ms": 0
+      }
+    ]
+  }
+]

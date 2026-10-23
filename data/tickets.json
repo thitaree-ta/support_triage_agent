@@ -1,0 +1,50 @@
+[
+  {
+    "id": "T-001",
+    "customer": {
+      "customer_id": "cust-1001",
+      "plan": "free",
+      "tenure_months": 4,
+      "notes": "Free tier for 4 months. Upgrade to Pro attempted. First time contacting support."
+    },
+    "messages": [
+      {"minutes_ago": 180, "text": "My payment failed when I tried to upgrade to Pro. Can you check what's wrong?"},
+      {"minutes_ago": 120, "text": "I tried again with a different card. Now I see TWO pending charges but my account still shows Free plan??"},
+      {"minutes_ago": 60, "text": "Okay this is getting ridiculous. Just checked my bank app - I have THREE charges of $29.99 now. None of them refunded. And I STILL don't have Pro access."},
+      {"minutes_ago": 0, "text": "HELLO?? Is anyone there??? I need this fixed NOW. I have a presentation in 2 hours and I need the Pro export features. If these charges aren't reversed by end of day I'm disputing all of them with my bank."}
+    ]
+  },
+  {
+    "id": "T-002",
+    "customer": {
+      "customer_id": "cust-2002",
+      "plan": "enterprise",
+      "tenure_months": 8,
+      "region": "Thailand",
+      "seats": 45,
+      "notes": "First critical issue."
+    },
+    "messages": [
+      {"minutes_ago": 120, "text": "ระบบเข้าไม่ได้ครับ ขึ้น error 500"},
+      {"minutes_ago": 90, "text": "ลองหลายเครื่องแล้ว ทั้ง Chrome, Safari, Firefox ผลเหมือนกันหมด เพื่อนร่วมงานก็เข้าไม่ได้เหมือนกัน"},
+      {"minutes_ago": 45, "text": "ตอนนี้ลูกค้าโวยเข้ามาเยอะมาก เรามี demo กับลูกค้ารายใหญ่บ่ายนี้ ถ้าระบบไม่กลับมา deal นี้อาจจะหลุด"},
+      {"minutes_ago": 0, "text": "เช็ค status.company.com แล้ว บอกว่า all systems operational แต่เราใช้งานไม่ได้จริงๆ ช่วยเช็คให้หน่อยได้ไหมครับ region Asia มีปัญหาหรือเปล่า?"}
+    ]
+  },
+  {
+    "id": "T-003",
+    "last_agent_reply_minutes_ago": 2850,
+    "customer": {
+      "customer_id": "cust-3003",
+      "plan": "pro",
+      "tenure_months": 5,
+      "notes": "Active user (daily logins). No previous support tickets."
+    },
+    "messages": [
+      {"minutes_ago": 2880, "text": "Hey, just wondering if you support dark mode? No rush 😊"},
+      {"minutes_ago": 1440, "text": "Thanks for the reply! Oh nice, so it's in Settings > Appearance. Found it! But hmm I'm on Pro plan and I only see 'Light' and 'System Default' options. No dark mode toggle?"},
+      {"minutes_ago": 1260, "text": "Okay so I switched to 'System Default' and my Mac is set to dark mode, but your app still shows light theme. Is this a bug or am I missing something?"},
+      {"minutes_ago": 30, "text": "Also random question while I have you - is there a way to schedule dark mode? Like auto-switch at 6pm? Some apps have that. Would be cool if you guys added it 👀"}
+    ]
+  }
+]

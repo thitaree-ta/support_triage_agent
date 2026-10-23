@@ -1,0 +1,17 @@
+[
+  {
+    "id": "F-BLANK",
+    "customer": {
+      "customer_id": "cust-3003",
+      "plan": "pro",
+      "tenure_months": 5,
+      "notes": "Active user (daily logins). No previous support tickets."
+    },
+    "messages": [
+      {
+        "minutes_ago": 10,
+        "text": "   "
+      }
+    ]
+  }
+]

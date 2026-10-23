@@ -1,0 +1,28 @@
+{
+  "T-004": {
+    "urgency": "low",
+    "reason": "Nonurgent invitation question, spare seats, no blocked work; mild frustration and Enterprise tier do not imply severity.",
+    "kb_coverage": "KB-601 directly relevant",
+    "reasonable_actions": [
+      "auto_respond",
+      "route_to_specialist"
+    ]
+  },
+  "T-005": {
+    "urgency": "medium",
+    "reason": "Persistent single-user reset-link failure; mobile workaround, no deadline; requesting a new link did not fix it.",
+    "kb_coverage": "KB-501 only partly relevant: reset email delivery, not instantly expired links",
+    "reasonable_actions": [
+      "route_to_specialist"
+    ]
+  },
+  "T-006": {
+    "urgency": "high",
+    "reason": "8,000-record import blocks a contracted session in 90 minutes; scope is one workflow, not broad service outage.",
+    "kb_coverage": "No import troubleshooting documentation supplied",
+    "reasonable_actions": [
+      "route_to_specialist",
+      "escalate_to_human"
+    ]
+  }
+}

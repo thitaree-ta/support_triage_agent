@@ -1,0 +1,26 @@
+{
+  "ap-southeast": {
+    "public_status_page": {"status": "operational", "last_updated_minutes_ago": 300, "active_incidents": []},
+    "internal_monitoring": {
+      "error_rate_5xx_pct": 41.8,
+      "alert_firing": true,
+      "alert_started_minutes_ago": 125,
+      "affected_components": ["api-gateway", "web-app"],
+      "declared_incident_id": null
+    }
+  },
+  "us-east": {
+    "public_status_page": {"status": "operational", "last_updated_minutes_ago": 300, "active_incidents": []},
+    "internal_monitoring": {
+      "error_rate_5xx_pct": 0.1, "alert_firing": false, "alert_started_minutes_ago": null,
+      "affected_components": [], "declared_incident_id": null
+    }
+  },
+  "eu-west": {
+    "public_status_page": {"status": "operational", "last_updated_minutes_ago": 300, "active_incidents": []},
+    "internal_monitoring": {
+      "error_rate_5xx_pct": 0.2, "alert_firing": false, "alert_started_minutes_ago": null,
+      "affected_components": [], "declared_incident_id": null
+    }
+  }
+}
