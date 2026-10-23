@@ -48,8 +48,12 @@ python -m triage --mode mock --json --traces --output results.json
 ```
 
 ## Run the Application (OpenAI API Key required)
-Live mode: first copy .env.example to .env and set your key/model
+Live mode: first copy .env.example to .env and set your OPENAI API key/model
+```powershell
+cp .env.example .env 
+```
 
+Running command
 ```powershell
 # Run all three tickets
 python -m triage --mode openai
